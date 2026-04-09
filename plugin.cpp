@@ -70,7 +70,7 @@ void updateClientMapping(uint64 serverConnectionHandlerID)
 {
     anyID *clientList;
 
-    if (ts3Functions.getClientList(serverConnectionHandlerID, &clientList) != ERROR_ok)
+    if (ts3Functions.getClientList(serverConnectionHandlerID, &clientList) != 0)
         return;
 
     nameToClientID.clear();
@@ -84,7 +84,7 @@ void updateClientMapping(uint64 serverConnectionHandlerID)
                 serverConnectionHandlerID,
                 clientID,
                 CLIENT_NICKNAME,
-                &name) == ERROR_ok)
+                &name) == 0)
         {
 
             nameToClientID[name] = clientID;
