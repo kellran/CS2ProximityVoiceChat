@@ -31,7 +31,7 @@ const float OCCLUSION_FACTOR = 0.3f; // 30% volume when blocked
 // ==============================
 std::string fetchData()
 {
-    FILE *pipe = _popen("curl -s http://192.168.0.45:3000/data", "r");
+    FILE *pipe = _popen("curl -s http://192.168.2.163:3000/data", "r");
     if (!pipe)
         return "";
 

@@ -94,7 +94,7 @@ events:
       Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 09.04.2026 19:44:24.
+      Build started 09.04.2026 22:44:06.
       Project "D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\4.3.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -120,7 +120,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.71
+      Time Elapsed 00:00:00.76
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -900,7 +900,7 @@ events:
       Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 09.04.2026 19:44:25.
+      Build started 09.04.2026 22:44:07.
       Project "D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\4.3.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -926,7 +926,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.49
+      Time Elapsed 00:00:00.48
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -1386,8 +1386,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-i0bh8w"
-      binary: "D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-i0bh8w"
+      source: "D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-7xgsx7"
+      binary: "D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-7xgsx7"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -1397,32 +1397,32 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-i0bh8w'
+        Change Dir: 'D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-7xgsx7'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_7d588.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_344cf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 09.04.2026 19:44:26.
-        Project "D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i0bh8w\\cmTC_7d588.vcxproj" on node 1 (default targets).
+        Build started 09.04.2026 22:44:07.
+        Project "D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7xgsx7\\cmTC_344cf.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i0bh8w\\Debug\\".
-          Creating directory "cmTC_7d588.dir\\Debug\\cmTC_7d588.tlog\\".
+          Creating directory "D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7xgsx7\\Debug\\".
+          Creating directory "cmTC_344cf.dir\\Debug\\cmTC_344cf.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_7d588.dir\\Debug\\cmTC_7d588.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_344cf.dir\\Debug\\cmTC_344cf.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_7d588.dir\\Debug\\\\" /Fd"cmTC_7d588.dir\\Debug\\vc142.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_344cf.dir\\Debug\\\\" /Fd"cmTC_344cf.dir\\Debug\\vc142.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30158 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCCompilerABI.c
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_7d588.dir\\Debug\\\\" /Fd"cmTC_7d588.dir\\Debug\\vc142.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_344cf.dir\\Debug\\\\" /Fd"cmTC_344cf.dir\\Debug\\vc142.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i0bh8w\\Debug\\cmTC_7d588.exe" /INCREMENTAL /ILK:"cmTC_7d588.dir\\Debug\\cmTC_7d588.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-i0bh8w/Debug/cmTC_7d588.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-i0bh8w/Debug/cmTC_7d588.lib" /MACHINE:X64  /machine:x64 cmTC_7d588.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_7d588.vcxproj -> D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i0bh8w\\Debug\\cmTC_7d588.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7xgsx7\\Debug\\cmTC_344cf.exe" /INCREMENTAL /ILK:"cmTC_344cf.dir\\Debug\\cmTC_344cf.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-7xgsx7/Debug/cmTC_344cf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-7xgsx7/Debug/cmTC_344cf.lib" /MACHINE:X64  /machine:x64 cmTC_344cf.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_344cf.vcxproj -> D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7xgsx7\\Debug\\cmTC_344cf.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_7d588.dir\\Debug\\cmTC_7d588.tlog\\unsuccessfulbuild".
-          Touching "cmTC_7d588.dir\\Debug\\cmTC_7d588.tlog\\cmTC_7d588.lastbuildstate".
-        Done Building Project "D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i0bh8w\\cmTC_7d588.vcxproj" (default targets).
+          Deleting file "cmTC_344cf.dir\\Debug\\cmTC_344cf.tlog\\unsuccessfulbuild".
+          Touching "cmTC_344cf.dir\\Debug\\cmTC_344cf.tlog\\cmTC_344cf.lastbuildstate".
+        Done Building Project "D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7xgsx7\\cmTC_344cf.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
@@ -1468,8 +1468,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-f46jto"
-      binary: "D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-f46jto"
+      source: "D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-lbbdsw"
+      binary: "D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-lbbdsw"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1480,32 +1480,32 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-f46jto'
+        Change Dir: 'D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-lbbdsw'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_4c777.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_31e7b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 09.04.2026 19:44:26.
-        Project "D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f46jto\\cmTC_4c777.vcxproj" on node 1 (default targets).
+        Build started 09.04.2026 22:44:08.
+        Project "D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lbbdsw\\cmTC_31e7b.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f46jto\\Debug\\".
-          Creating directory "cmTC_4c777.dir\\Debug\\cmTC_4c777.tlog\\".
+          Creating directory "D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lbbdsw\\Debug\\".
+          Creating directory "cmTC_31e7b.dir\\Debug\\cmTC_31e7b.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_4c777.dir\\Debug\\cmTC_4c777.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_31e7b.dir\\Debug\\cmTC_31e7b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_4c777.dir\\Debug\\\\" /Fd"cmTC_4c777.dir\\Debug\\vc142.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_31e7b.dir\\Debug\\\\" /Fd"cmTC_31e7b.dir\\Debug\\vc142.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30158 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCXXCompilerABI.cpp
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_4c777.dir\\Debug\\\\" /Fd"cmTC_4c777.dir\\Debug\\vc142.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_31e7b.dir\\Debug\\\\" /Fd"cmTC_31e7b.dir\\Debug\\vc142.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f46jto\\Debug\\cmTC_4c777.exe" /INCREMENTAL /ILK:"cmTC_4c777.dir\\Debug\\cmTC_4c777.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-f46jto/Debug/cmTC_4c777.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-f46jto/Debug/cmTC_4c777.lib" /MACHINE:X64  /machine:x64 cmTC_4c777.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_4c777.vcxproj -> D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f46jto\\Debug\\cmTC_4c777.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lbbdsw\\Debug\\cmTC_31e7b.exe" /INCREMENTAL /ILK:"cmTC_31e7b.dir\\Debug\\cmTC_31e7b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-lbbdsw/Debug/cmTC_31e7b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/CMakeFiles/CMakeScratch/TryCompile-lbbdsw/Debug/cmTC_31e7b.lib" /MACHINE:X64  /machine:x64 cmTC_31e7b.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_31e7b.vcxproj -> D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lbbdsw\\Debug\\cmTC_31e7b.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_4c777.dir\\Debug\\cmTC_4c777.tlog\\unsuccessfulbuild".
-          Touching "cmTC_4c777.dir\\Debug\\cmTC_4c777.tlog\\cmTC_4c777.lastbuildstate".
-        Done Building Project "D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f46jto\\cmTC_4c777.vcxproj" (default targets).
+          Deleting file "cmTC_31e7b.dir\\Debug\\cmTC_31e7b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_31e7b.dir\\Debug\\cmTC_31e7b.tlog\\cmTC_31e7b.lastbuildstate".
+        Done Building Project "D:\\ProgramFiles\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\content\\csgo_addons\\test\\script\\cs2Proximity\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lbbdsw\\cmTC_31e7b.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)

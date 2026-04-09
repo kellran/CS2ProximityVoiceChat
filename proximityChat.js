@@ -126,7 +126,7 @@ function sendToBridge(playersData) {
     };
 
     // NOTE: depends on CS2 HTTP support
-    HTTP.Post("http://192.168.0.45:3000/update", JSON.stringify(payload));
+    HTTP.Post("http://192.168.2.163:3000/update", JSON.stringify(payload));
 }
 
 // ==============================
