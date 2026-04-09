@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\ProgramFiles\Steam\steamapps\common\Counter-Strike Global Offensive\content\csgo_addons\test\script\cs2Proximity\build\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\ProgramFiles\Steam\steamapps\common\Counter-Strike Global Offensive\content\csgo_addons\test\script\cs2Proximity\build\Release\cs2_proximity_plugin.dll</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

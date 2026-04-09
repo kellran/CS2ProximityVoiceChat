@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\ProgramFiles\Steam\steamapps\common\Counter-Strike Global Offensive\content\csgo_addons\test\script\cs2Proximity\plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ProgramFiles\Steam\steamapps\common\Counter-Strike Global Offensive\content\csgo_addons\test\script\cs2Proximity\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{09ECE5DB-715B-3A9A-9ED4-1C7AFD72F05E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

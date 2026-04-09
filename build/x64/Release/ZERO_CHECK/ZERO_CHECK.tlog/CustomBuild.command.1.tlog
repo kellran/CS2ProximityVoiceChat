@@ -1,0 +1,10 @@
+^D:\PROGRAMFILES\STEAM\STEAMAPPS\COMMON\COUNTER-STRIKE GLOBAL OFFENSIVE\CONTENT\CSGO_ADDONS\TEST\SCRIPT\CS2PROXIMITY\BUILD\CMAKEFILES\5459130A933E32429E400CFDC6714AF3\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity" "-BD:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/ProgramFiles/Steam/steamapps/common/Counter-Strike Global Offensive/content/csgo_addons/test/script/cs2Proximity/build/cs2_proximity_plugin.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

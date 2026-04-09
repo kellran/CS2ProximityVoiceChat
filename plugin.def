@@ -1,0 +1,11 @@
+LIBRARY "cs2_proximity_plugin"
+EXPORTS
+    ts3plugin_name
+    ts3plugin_version
+    ts3plugin_apiVersion
+    ts3plugin_author
+    ts3plugin_description
+    ts3plugin_setFunctionPointers
+    ts3plugin_init
+    ts3plugin_shutdown
+    ts3plugin_onConnectStatusChangeEvent
