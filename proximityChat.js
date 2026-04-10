@@ -1,10 +1,6 @@
 import { Instance } from "cs_script/point_script";
 
-// ==============================
-// CONFIG
-// ==============================
-const UPDATE_RATE = 0.05; // 20 Hz
-const MAX_TRACE_DISTANCE = 5000;
+const UPDATE_RATE = 0.05;
 
 // ==============================
 // Helpers
@@ -21,15 +17,8 @@ function anglesToForward(angles) {
     };
 }
 
-function distance(a, b) {
-    const dx = a.x - b.x;
-    const dy = a.y - b.y;
-    const dz = a.z - b.z;
-    return Math.sqrt(dx*dx + dy*dy + dz*dz);
-}
-
 // ==============================
-// Get all players
+// Get players
 // ==============================
 
 function getPlayers() {
@@ -37,31 +26,28 @@ function getPlayers() {
 }
 
 // ==============================
-// Build player data
+// Build data
 // ==============================
 
 function buildPlayerData(players) {
-
     const result = [];
 
-    for (let i = 0; i < players.length; i++) {
-        const p = players[i];
-
+    for (let p of players) {
         if (!p || !p.IsAlive()) continue;
 
         const pos = p.GetAbsOrigin();
         const ang = p.GetEyeAngles();
-        const forward = anglesToForward(ang);
+        const fwd = anglesToForward(ang);
 
         result.push({
-            entity: p,
-            name: p.GetPlayerName(), // MUST match TeamSpeak nickname
+            name: p.GetPlayerName(),
             x: pos.x,
             y: pos.y,
             z: pos.z,
-            fx: forward.x,
-            fy: forward.y,
-            fz: forward.z
+            fx: fwd.x,
+            fy: fwd.y,
+            fz: fwd.z,
+            occluded: 0
         });
     }
 
@@ -69,64 +55,22 @@ function buildPlayerData(players) {
 }
 
 // ==============================
-// Occlusion (listener-based)
-// ==============================
-
-function applyOcclusion(playersData) {
-
-    // pick local player as listener (first one for now)
-    if (playersData.length === 0) return;
-
-    const listener = playersData[0];
-
-    for (let i = 0; i < playersData.length; i++) {
-        const p = playersData[i];
-
-        if (p === listener) {
-            p.occluded = 0;
-            continue;
-        }
-
-        const start = {
-            x: listener.x,
-            y: listener.y,
-            z: listener.z + 64 // eye height approx
-        };
-
-        const end = {
-            x: p.x,
-            y: p.y,
-            z: p.z + 64
-        };
-
-        const trace = Instance.TraceLine(start, end, 0, listener.entity);
-
-        // If something blocks → occluded
-        p.occluded = trace.didHit ? 1 : 0;
-    }
-}
-
-// ==============================
-// Send to Node bridge
+// FILE WRITE (NEW BRIDGE)
 // ==============================
 
 function sendToBridge(playersData) {
-
     const payload = {
-        players: playersData.map(p => ({
-            name: p.name,
-            x: p.x,
-            y: p.y,
-            z: p.z,
-            fx: p.fx,
-            fy: p.fy,
-            fz: p.fz,
-            occluded: p.occluded || 0
-        }))
+        players: playersData
     };
 
-    // NOTE: depends on CS2 HTTP support
-    HTTP.Post("http://192.168.2.163:3000/update", JSON.stringify(payload));
+    try {
+        FileSystem.WriteFile(
+            "cs2_data.json",
+            JSON.stringify(payload)
+        );
+    } catch (e) {
+        print("WRITE ERROR: " + e);
+    }
 }
 
 // ==============================
@@ -137,17 +81,16 @@ function tick() {
     const players = getPlayers();
     const data = buildPlayerData(players);
 
-    applyOcclusion(data);
     sendToBridge(data);
 
     Instance.SetThink(tick, UPDATE_RATE);
 }
 
 // ==============================
-// Entry point
+// Entry
 // ==============================
 
 export function OnActivate() {
-    print("CS2 Proximity Script Loaded");
+    print("CS2 PROXIMITY SCRIPT LOADED");
     tick();
 }

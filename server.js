@@ -1,65 +1,42 @@
 const http = require("http");
+const fs = require("fs");
 
 let latestData = null;
 
 // ==============================
-// SERVER
+// FILE POLLING (NEW)
 // ==============================
+
+setInterval(() => {
+    try {
+        const raw = fs.readFileSync("cs2_data.json", "utf8");
+        latestData = JSON.parse(raw);
+    } catch {
+        // ignore if file not ready yet
+    }
+}, 50);
+
+// ==============================
+// HTTP SERVER
+// ==============================
+
 const server = http.createServer((req, res) => {
 
-    // Allow cross-origin (helps debugging/tools)
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Access-Control-Allow-Methods", "GET, POST");
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-
-    if (req.method === "POST" && req.url === "/update") {
-        let body = "";
-
-        req.on("data", chunk => {
-            body += chunk;
-
-            // prevent abuse / huge payloads
-            if (body.length > 1e6) {
-                req.socket.destroy();
-            }
-        });
-
-        req.on("end", () => {
-            try {
-                latestData = JSON.parse(body);
-
-                console.log(
-                    `[UPDATE] ${latestData.players?.length || 0} players`
-                );
-
-            } catch (e) {
-                console.error("Invalid JSON:", e.message);
-            }
-
-            res.writeHead(200);
-            res.end("OK");
-        });
-    }
-
-    else if (req.method === "GET" && req.url === "/data") {
-
+    if (req.method === "GET" && req.url === "/data") {
         res.writeHead(200, { "Content-Type": "application/json" });
         res.end(JSON.stringify(latestData || {}));
-    }
-
-    else {
+    } else {
         res.writeHead(404);
         res.end();
     }
 });
 
 // ==============================
-// IMPORTANT: LISTEN ON NETWORK
+// START SERVER
 // ==============================
 
 const PORT = 3000;
-const HOST = "0.0.0.0"; // 🔥 THIS IS THE KEY CHANGE
 
-server.listen(PORT, HOST, () => {
-    console.log(`Bridge running on http://0.0.0.0:${PORT}`);
+server.listen(PORT, "0.0.0.0", () => {
+    console.log(`Bridge running on http://localhost:${PORT}`);
 });
